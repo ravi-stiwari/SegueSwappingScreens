@@ -23,23 +23,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="czU-2y-SQX">
-                                <rect key="frame" x="66" y="239" width="243" height="190"/>
+                                <rect key="frame" x="66" y="236" width="243" height="196"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KJA-si-7Gf">
                                         <rect key="frame" x="0.0" y="0.0" width="243" height="30"/>
+                                        <color key="backgroundColor" white="0.94287109375" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.13311258694350694" green="0.72336632010000002" blue="0.51642938851282005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J84-Ss-An6">
                                         <rect key="frame" x="0.0" y="80" width="243" height="30"/>
+                                        <color key="backgroundColor" white="0.94287109375" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.13311258694350694" green="0.72336632010000002" blue="0.51642938851282005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzE-WZ-76H">
-                                        <rect key="frame" x="0.0" y="160" width="243" height="30"/>
+                                        <rect key="frame" x="0.0" y="160" width="243" height="36"/>
+                                        <color key="backgroundColor" red="0.88251506980000005" green="0.26785476549999998" blue="0.42666960799999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" white="0.9428710938" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Login Now !"/>
+                                        <connections>
+                                            <segue destination="pZQ-ow-ymv" kind="show" id="gkZ-Ng-9eZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -68,12 +78,24 @@
                     <view key="view" contentMode="scaleToFill" id="Ls6-Qc-B1H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbJ-ff-tVS">
+                                <rect key="frame" x="16" y="28" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="pZQ-ow-ymv" eventType="touchUpInside" id="fDo-wY-5Lf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byY-mr-zZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="559" y="237"/>
+            <point key="canvasLocation" x="557.60000000000002" y="236.13193403298354"/>
         </scene>
     </scenes>
 </document>
