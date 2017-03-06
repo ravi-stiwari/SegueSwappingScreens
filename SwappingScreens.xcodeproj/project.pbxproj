@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780E3A921E6D93E60021385E /* PlaySongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780E3A911E6D93E60021385E /* PlaySongVC.swift */; };
 		784A13721E6C54D0008261F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A13711E6C54D0008261F8 /* AppDelegate.swift */; };
 		784A13741E6C54D0008261F8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A13731E6C54D0008261F8 /* LoginVC.swift */; };
 		784A13771E6C54D0008261F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784A13751E6C54D0008261F8 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		780E3A911E6D93E60021385E /* PlaySongVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongVC.swift; sourceTree = "<group>"; };
 		784A136E1E6C54D0008261F8 /* SwappingScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwappingScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		784A13711E6C54D0008261F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		784A13731E6C54D0008261F8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				784A13731E6C54D0008261F8 /* LoginVC.swift */,
 				784A13841E6C66E2008261F8 /* MusicListVC.swift */,
+				780E3A911E6D93E60021385E /* PlaySongVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				784A13741E6C54D0008261F8 /* LoginVC.swift in Sources */,
+				780E3A921E6D93E60021385E /* PlaySongVC.swift in Sources */,
 				784A13851E6C66E2008261F8 /* MusicListVC.swift in Sources */,
 				784A13721E6C54D0008261F8 /* AppDelegate.swift in Sources */,
 			);
@@ -314,6 +318,7 @@
 				784A13821E6C54D0008261F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
